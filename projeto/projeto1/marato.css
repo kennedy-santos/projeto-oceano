@@ -1,0 +1,44 @@
+.ima-ge {
+    text-align: center;
+}
+h1, h2 {
+    text-align: center;
+    font-family: impact;
+    color: indigo;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+p {
+    text-align: start;
+    color: white;
+    font-family: courier new;
+    font-size: 150%;
+    text-indent: 1.5em;
+    margin-top: 10 
+}
+a:link {
+  color: #000000;
+  text-decoration:none;
+}
+a:visited {
+  color: darkblue;
+  text-decoration:none;
+}
+a:hover {
+  color:white;
+  text-decoration:underline;
+}
+a:active {
+  color:#00ff00;
+  text-decoration:underline;
+  background-color:#784cc6;
+}
+.container {
+  display: flex;
+  font-family: courier now;
+  font-size: 200%;
+  justify-content: space-around;
+}
+.imagens {
+  display: flex;
+  justify-content: space-around;
+}

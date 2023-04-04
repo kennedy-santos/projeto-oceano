@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 15</title>
+    <style>
+        .div1{
+            float: right;
+            padding: 10px;
+            border: 3px solid #73ad21;
+        }
+        .div2 {
+            padding: 10px;
+            border: 3px solid red;
+        }
+        .div3{
+            float: left;
+            padding: 10px;
+            border: 3px solid #73ad21;
+        }
+        .div4{
+            padding: 10px;
+            border: 3px solid red;
+            clear: left;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sem clear</h2>
+    <div class="div1"> div1</div>
+    <div class="div2">div2 - Observe que div2 está após div1 no código HTML. No entanto, como div1 flutua para a esquerda, o texto em div2 flui em torno de div1.</div>
+    <br>
+    <h2>Com clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4", style="overflow: auto;"> - Aqui, claro: esquerda; move div4 para baixo abaixo do div3 flutuante. O valor "left" limpa os elementos flutuados à esquerda. Você também pode usar "rigth" e "both"<img src="C:\Users\Micro\OneDrive\Documentos\estudos de HTML\HTML5 e CSS3\exercicios\treino\imagens\gatin.jpeg" alt="gatin" style="width: 250px;height: auto;"></div>
+</body>
+</html>

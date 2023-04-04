@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação com ondas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>OCEANO AZUL</h1>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path class="wave1" fill="#43818A" fill-opacity="1" d="M0,288L48,277.3C96,267,192,245,288,202.7C384,160,480,96,576,101.3C672,107,768,181,864,197.3C960,213,1056,171,1152,154.7C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            <path class="wave2" fill="#57A7B3" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,213.3C672,224,768,192,864,165.3C960,139,1056,117,1152,122.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            <path class="wave3" fill="#66C3D0" fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,245.3C384,235,480,181,576,186.7C672,192,768,256,864,250.7C960,245,1056,171,1152,144C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            
+        </svg>
+    </header>
+    <section>
+        <div>
+            <h1>Escolha bem!</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <img src="tartaruga.png" alt="tartaruga">
+                    <h3>Tartaruga</h3>
+                    <p class="p1">Vida: 360</p>
+                    <p class="p2">Ataque: 27</p>
+                    <p class="p3">Agilidade: 23</p>
+                    <p class="p4">Resistencia: 450</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <img src="tubarão.jpg" alt="tubarão">
+                    <h3>Tubarão</h3>
+                    <p class="p1">Vida: 230</p>
+                    <p class="p2">Ataque: 73</p>
+                    <p class="p3">Agilidade: 78</p>
+                    <p class="p4">Resistencia: 150</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <img src="polvo.jpg" alt="polvo">
+                    <h3>Polvo</h3>
+                    <p class="p1">Vida: 190</p>
+                    <p class="p2">Ataque: 50</p>
+                    <p class="p3">Agilidade: 123</p>
+                    <p class="p4">Resistencia: 125</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+</html>

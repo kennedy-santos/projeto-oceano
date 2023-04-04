@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #111;
+        }
+        .active {
+            background-color: red;
+        }
+        .box {
+            float: right;
+            width: 33.33%;
+            padding: 10px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<ul>
+    <li><a href="https://br.freepik.com/vetores/casa" class="active">Home</a></li>
+    <li><a href="file:///C:/Users/Micro/OneDrive/Documentos/estudos%20de%20HTML/HTML5%20e%20CSS3/exercicios/treino/teste6.html" target="_blank">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+<body>
+    <h2>Grade de caixas</h2>
+    <p>Caixas flutuantes lado a lado:</p>
+    <div class="clearfix">
+        <div class="box" style="background-color: #bbb;"><p>Algo aqui dentro</p></div>
+        <div class="box" style="background-color: #ccc
+        ;"><p>Algo aqui támbem</p></div>
+        <div class="box" style="background-color: #ddd;"><p>Aqui por último</p></div>
+    </div>
+    <p><strong>Observação:</strong> aqui, usamos o hack clearfix para cuidar do fluxo do layout. Também usamos a propriedade box-sizing para garantir que a caixa não quebre devido ao preenchimento extra. Tente remover este código para ver o efeito.</p>
+    
+</body>
+</html>

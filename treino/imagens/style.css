@@ -1,0 +1,16 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p {
+    color: yellow;
+    font-family: courier;
+    font-size: 160%;
+    border: 2px solid green;
+    padding: 0%;
+    margin: 50px;
+}

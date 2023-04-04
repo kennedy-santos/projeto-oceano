@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Cor" href="cor.css">
+    <style>
+        <!--
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }-->
+        a:link, a:visited {
+            background-color: purple;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            display: inline-block;
+        }
+        a:hover, a:active {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.pudim.com.br/" target="_blank">Link text</a>
+    <h2>Absolute URLs</h2>
+    <!--URL absoluta é colocada a URL inteira no href-->
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+    <!--URL relativa é colocada a URl sem o WWW.-->
+    <h2>Relative URLs</h2>
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+    <!--Usando uma imagem como link-->
+    <a href="https://www.ilovepdf.com/" target="_blank"><img src="gatin.jpeg" alt="HTML tutorial"></a>
+    <p><a href="mailto:keke.slipk@gmail.com">Send e-mail</a></p>
+    <button onclick="document.location='padrão.asp'"><!--Em padrão.asp é esperado uma interação com o JavaScript-->PDF tutorial</button>
+    <p><a href="https://www.w3schools.com/html/" target="_blank" title="Go to w3schools HTML section">Visit our HTML Tutorial</a></p>
+    <p><a href="https://www.wreducacional.com.br/registro" title="Link estudo">Link para aprender</a></p>
+    <h3 id="C4" ><a href="html_demo.html#C4">Pular para o capítulo 4</a></h3>
+    
+</body>
+</html>

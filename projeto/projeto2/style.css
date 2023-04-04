@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: darkorange;
+}
+.imagen {
+    height: 110px;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.cabecalho-meu {
+    display: flex;
+    gap: 40px;
+}
+.cabecalho-meu-item {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 16px 18px;
+}
+.cabecalho-meu-item:hover {
+    background-color: rgba(3, 165, 3, 0.781);
+}
+.conteudo {
+    border-top: 0.3px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.conteudo-texto{
+    padding-top: 15px;
+}
+.conteudo-titulo {
+    text-align: left;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+.conteudo-linha {
+    text-align: left;
+    color: aliceblue;
+    font-size: 140%;
+}
+.meio {
+    height: 50vh;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+span {
+    font-size: x-large;
+}
+img.slide {
+    box-shadow: 0 1px 2px #0003;
+    width: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 450px) {
+    .swiper {
+      height: 270px;
+    }
+}

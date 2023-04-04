@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: #fff;
+    font-size: max(60px, 4vw);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+header,
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+section {
+    background: linear-gradient(#66c3d0, #000c1b);
+}
+header {
+    background: #024b61;
+    position: relative;
+}
+header h1 {
+    border: 5px solid white;
+    padding: 10px 50px;
+    margin: 50px;
+}
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.wave1 {
+    animation: moveWave1 5s ease-in-out infinite alternate;
+    scale: 100px;
+}
+
+@keyframes moveWave1 {
+    from {
+        transform: translateX(90px);
+        transform: scaleX(1.5);
+    }
+}
+.wave2 {
+    animation: moveWave2 10s 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave2 {
+    from {
+        transform: translateX(60px);
+        transform: scaleX(1.5);
+    }
+}
+.wave3 {
+    animation: moveWave3 7s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave3 {
+    from {
+        transform: translateX(30px);
+        transform: scaleX(1.5);
+    }
+}
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .content h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+.p1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    color: green;
+    z-index: 1;
+}
+.p2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    color: red;
+    z-index: 1; 
+}
+.p3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    color: cornflowerblue;
+    z-index: 1; 
+}
+.p4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+    color: orangered;
+    z-index: 1; 
+}
